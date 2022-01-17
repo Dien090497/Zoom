@@ -1,16 +1,13 @@
 import React from "react";
-import type { Node } from "react";
-import { SafeAreaView, StatusBar, View, Text } from "react-native";
+import { SafeAreaView} from "react-native";
+import Route from "./src/route";
+import Home from './src/screens/Home'
 
 const App: () => Node = () => {
   return (
-    <SafeAreaView>
-      <StatusBar barStyle={"light-content"} style={'auto'}/>
-      <View>
-        <Text>
-          Zoom
-        </Text>
-      </View>
+    <SafeAreaView style={{flex:1, backgroundColor: 'black'}} >
+      <Route/>
+      {/*<Home/>*/}
     </SafeAreaView>
   );
 };
